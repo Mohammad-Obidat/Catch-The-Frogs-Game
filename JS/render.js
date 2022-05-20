@@ -31,7 +31,7 @@ const Renderer = () => {
     $('#levelNum').text(levelNum);
   };
 
-  const sratrText = () => {
+  const startText = () => {
     $('#startCatching').empty();
     $('#startCatching').text('Catch the Frogs!');
   };
@@ -46,6 +46,7 @@ const Renderer = () => {
       if (time <= -1) {
         alert(`You haven't catch all the Frogs 🐸`);
         clearInterval(secondsLeft);
+        window.location.reload();
       }
     }, 1000);
   };
@@ -58,7 +59,7 @@ const Renderer = () => {
 
   const renderFrogs = (frogs, time, frogLeftNum, levelNum) => {
     renderPlayground(frogs);
-    sratrText();
+    startText();
     frogsLeft(frogLeftNum);
     level(levelNum);
     setTimer(time);

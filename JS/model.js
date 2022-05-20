@@ -53,11 +53,3 @@ const catchTheFrogs = () => {
     nextSequence,
   };
 };
-
-/* const Test = catchTheFrogs();
-Test.addFrog();
-Test.addFrog();
-Test.catchedFrogs(2);
-console.log(Test.getFrogs());
-console.log(Test.getFrogsToBeRemoved());
-console.log(Test.getClickedFrogs()); */
